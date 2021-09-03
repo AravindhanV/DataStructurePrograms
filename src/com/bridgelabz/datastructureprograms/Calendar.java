@@ -5,7 +5,6 @@ public class Calendar {
 	static int maxDaysInMonth[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	
 		static int findMaxDay(int month, int year) {
-			
 			if ((year % 400 == 0) || ((year % 100 != 0) && (year % 4 == 0))) {
 				maxDaysInMonth[2] = 29;
 			}
